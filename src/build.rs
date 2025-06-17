@@ -291,6 +291,9 @@ fn main() {
                     c.file("vendor/simd/arm/jidctfst-neon.c");
                     c.file("vendor/simd/arm/aarch64/jsimd.c");
                 },
+                "loongarch64" => {
+                    c.file("vendor/jsimd_none.c");
+                },
                 _ => {},
             }
             if asm_used_for_arch {
